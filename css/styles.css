@@ -1,0 +1,258 @@
+.container {
+   color: white;
+   text-align:justify;
+   font-size: 44px;
+ }
+ .container h1{
+   text-align: center;
+   
+ }
+ .container-nav {
+     font-size: 28px;
+     display: flex;
+     padding: 10px;
+     height: 50px;
+     background-color:  rgba(5, 33, 246, 0.95);
+   }
+   
+   
+   .navbar {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+   }
+   
+   
+   .brand {
+     display: flex;
+     align-items: center;
+   }
+   
+   
+   li>a {
+     padding: 8px 24px;
+   }
+   
+   
+   li {
+     list-style-type: none;
+   }
+   
+   
+  a {
+     color: white;
+     text-decoration:none;
+   }
+   
+   
+   .nav-links {
+     display: flex;
+     align-items: center;
+   }
+   
+   
+   .button-menu-toggle {
+     display: none;
+   }
+ 
+   .containerImagen {
+     padding: 10px;
+     margin-top: 70px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     
+   }  
+ 
+   @media (max-width: 768px) 
+ {
+     .column {
+       flex: 100%;
+     }
+   
+   
+     .nav-links {
+       display: none;
+     }
+   
+   
+     .button-menu-toggle {
+       display: block;
+       background-color: white;
+       border:none;
+       border-radius: 50px;
+       padding: 0 24px;
+       font-family: monospace;
+       font-weight: bold;
+       font-size: 24px;
+     }
+    
+     .nav-links.nav-links-responsive {
+       position: absolute;
+       display: flex;
+       background-color: rgba(18, 48, 7, 0.95);
+       width: 100%;
+       height: 100%;
+       top: 70px;
+       left: 0;
+       flex-direction: column;
+       padding-top: 200px;
+       align-items: center;
+       gap:70px;
+       font-size: 40px;
+   
+   
+     }
+   }
+html{
+   font-family: 'Edu NSW ACT Foundation', cursive;
+}
+body{
+   margin: 0;
+   background-color: #eae9e6;
+}
+
+h1{
+    font-size: 10 rem;
+    color: #efef;
+    text-align: center;
+    padding: 50px 0px;
+      
+    border:solid 0.3rem; /*tipo de linea del borde */
+    border-color: #3040d3e7; /*color borde*/
+    border-radius: 50px; /*modelo ovalado, cuatrado, boton etc*/
+    /* border-width: 4xp; tamaño de la linea */
+   
+     
+    width: 95%;
+    /* height: 150px;    */
+    margin: 0 auto;
+
+    background-image: url('/imagenes/guitarra.png');
+    background-size: cover;
+    
+
+    
+    text-decoration:underline;
+    text-shadow: 3px 5px 3px black;
+    
+   /* Posicion */
+   /* position: relative; */
+   /* top: 20px; */
+
+}
+body section{
+   width: 400px;
+   margin: 0 auto;
+}
+/*selector de atributo 
+# tipo "type"
+. Class "el nombre"
+[] otros atributos puede usar [atributo=valor] [atributo^=valor]
+                              [atributo*=valor] [atributo$=valor]
+*/
+/*.Titulo
+   {  
+      
+   }  
+ 
+*/
+/*estilo a la tabla s*/
+section article{
+   font-size: 24px;
+   color: black;
+   transition:box-shadow 0.3S ease;
+   background-color: #c9c6c6;
+   margin: 2rem 0;
+   border-radius: 0.5rem;
+   padding: 0.25rem 0;
+   cursor: pointer;
+   
+   
+}
+section article h2{
+   margin: 1rem;
+   text-align: center;
+} 
+section article:hover{
+   box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,3.0);
+}
+section article p, section article a{
+   margin: 1rem;
+}
+
+table, th, td
+   {
+   margin: auto;
+   border: 1px solid black;
+   border-collapse: collapse;
+   width: 90%;
+   padding: 1rem, ;
+   
+   }
+th 
+   {
+      color:rgb(75, 58, 12);
+      font-size: 24px;
+      background-color: rgba(163, 137, 81, 0.842);
+   }
+tr  
+   {
+      background-color:rgb(250, 203, 150);
+   }
+
+ tr:nth-child(even)
+   {
+      background-color: #eee;
+   }
+
+tr:hover
+   {  
+      background-color: #aaa;
+      cursor: pointer;
+
+   }
+   
+
+/*----------------------------------------------------------------------------*/
+footer 
+   {
+      background-color: #645858;
+      color:white;  
+      padding: 3rem;
+      /*border-style: outset;*/
+
+   }  
+footer p{
+   margin: 0;
+}
+footer section a{
+   margin-right: 1rem;
+   transition: color 0.5s ease;
+   float: right;
+   color: #fff;
+   text-decoration: none;
+ 
+}
+footer section a:hover{
+   color: cornflowerblue;
+}
+
+
+
+/* estilo para mensaje de conctacto*/
+.contact-message {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width:30%;
+   background-color: #f5f5f5;
+   padding: 10px;
+}
+
+.contact-message p {
+   margin-bottom: 0;
+}
+.llamada{
+   color: blue;
+}
